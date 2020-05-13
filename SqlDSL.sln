@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDSL", "SqlDSL\SqlDSL.csproj", "{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlDSL", "SqlDSL\SqlDSL.csproj", "{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{A767398C-E715-45E4-8FEA-6E9B314A9456}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{A767398C-E71
 		lib\Microsoft.Practices.EnterpriseLibrary.Data.dll = lib\Microsoft.Practices.EnterpriseLibrary.Data.dll
 		lib\Npgsql.dll = lib\Npgsql.dll
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDSL.Core", "SqlDSL.Core\SqlDSL.Core.csproj", "{87DEBF66-E184-4408-ADA5-2650653087EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,12 +24,20 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Debug|x64.ActiveCfg = Debug|x64
-		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Debug|x64.Build.0 = Debug|x64
+		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Debug|x64.Build.0 = Debug|Any CPU
 		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Release|Any CPU.Build.0 = Release|Any CPU
-		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Release|x64.ActiveCfg = Release|x64
-		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Release|x64.Build.0 = Release|x64
+		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Release|x64.ActiveCfg = Release|Any CPU
+		{059A4EE0-7F26-46D1-9CD0-06E93B3E9621}.Release|x64.Build.0 = Release|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Debug|x64.Build.0 = Debug|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{87DEBF66-E184-4408-ADA5-2650653087EA}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
