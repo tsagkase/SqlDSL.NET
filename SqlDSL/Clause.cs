@@ -5,7 +5,7 @@ using System.Data.SqlTypes;
 namespace SqlDSL
 {
     [Obsolete("Use InParam class instead")]
-    public class Clause
+    public class Clause1
     {
         private static CriterionNVT Criterion(string paramName, DbType paramType, object paramValue)
         {
