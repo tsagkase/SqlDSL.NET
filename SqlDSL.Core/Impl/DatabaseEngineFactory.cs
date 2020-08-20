@@ -4,6 +4,7 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using Microsoft.Practices.EnterpriseLibrary.Data;
 using Npgsql;
+using Oracle.ManagedDataAccess.Client;
 
 namespace SqlDSL.Core.Impl
 {
@@ -96,6 +97,17 @@ namespace SqlDSL.Core.Impl
                                                                            , criteria
                                                                            , selection
                                                                            , new PostgresAdoDatabaseEngine()
+                                                                           , SuccessfulReturnValue
+                                                                           , CommandTimeout
+                                                                           , DbExceptionHandler
+                                                                           , _makeTimerMetricCollector);
+                case "OracleSql":
+                case "OracleSql.Ado":
+                case "PLSQL":
+                    return new Executable<OracleConnection, OracleCommand>(connection
+                                                                           , criteria
+                                                                           , selection
+                                                                           , new OracleAdoDatabaseEngine()
                                                                            , SuccessfulReturnValue
                                                                            , CommandTimeout
                                                                            , DbExceptionHandler
