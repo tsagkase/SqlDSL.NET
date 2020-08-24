@@ -47,6 +47,7 @@ namespace SqlDSL.Core.Impl
 
         public void SetSqlCmdParam(OracleConnection db, OracleCommand dbCommand, CriterionNVT q)
         {
+            dbCommand.BindByName = true;
             var parameter = dbCommand.CreateParameter();
             parameter.Direction = ParameterDirection.Input;
             parameter.DbType = q.Type;
