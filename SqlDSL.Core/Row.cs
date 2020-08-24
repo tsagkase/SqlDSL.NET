@@ -34,7 +34,7 @@ namespace SqlDSL.Core
             }
         }
 
-        public Dictionary<string, object> GetAllEntries(IRow row)
+        public Dictionary<string, object> GetAllEntries()
         {
             return _entries.Keys.Cast<object>().ToDictionary(entry => (string) entry, entry => _entries[entry]);
         }

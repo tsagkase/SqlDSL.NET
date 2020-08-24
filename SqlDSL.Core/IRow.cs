@@ -40,6 +40,6 @@ namespace SqlDSL.Core
         //Integer Integer(string key);
 
         //Rational Rational(string key);
-        Dictionary<string, object> GetAllEntries(IRow row);
+        Dictionary<string, object> GetAllEntries();
     }
 }
