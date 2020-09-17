@@ -18,7 +18,17 @@ namespace SqlDSL.Core
         {
             if (!_entries.ContainsKey(key))
                 throw new Exception(string.Format("unknown column '{0}'", key));
-            return (T)_entries[key];
+            var entry = _entries[key];
+            T result;
+            try 
+            {
+                result = (T)(entry == null || entry.GetType() == typeof(System.DBNull) ? null : entry);
+            }
+            catch (Exception x)
+            {
+                throw new Exception($"Failed cast for {key}!", x);
+            }
+            return result;
         }
 
         #region IRow Members
